@@ -10,7 +10,7 @@
       "destination": "/frontend/dist/assets/$1"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api|assets).*).*",
       "destination": "/frontend/dist/index.html"
     }
   ]
