@@ -1,0 +1,29 @@
+.section_categories{
+    margin-top: 172px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    width: 254px;
+}
+
+.section_categories h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+}
+
+@media (max-width: 620px){
+    .section_categories h2{
+        font-size:40px;
+    }
+
+    .section_categories{
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 94.44%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.line {
+    flex-basis: 16px;
+    height: 1px;
+    background-color: #ddd;
+}
+
+@media (max-width: 725px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+

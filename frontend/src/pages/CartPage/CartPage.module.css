@@ -1,0 +1,380 @@
+.cart_section{
+    margin-top: 172px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cart_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line{
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.cart_header h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    padding-right: 32px;
+}
+
+.cart_content {
+    display: flex;
+    gap: 32px;
+}
+
+.items_list {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order_details {
+    flex: 1;
+    background: #F1F1F1;
+    border-radius: 12px;
+    padding: 32px;
+    height: fit-content;
+}
+
+.cart_item {
+    display: flex;
+    border: 1px solid #DDD;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 180px;
+    gap: 32px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.cart_item img {
+    width: 200px;
+    height: 100%;
+    object-fit: contain;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.item_info{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 32px 32px 0px;
+    justify-content: center;
+    max-height: 180px;
+    flex-grow: 1;
+}
+
+.item_top{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item_top h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.remove_btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.item_bottom{
+    display: flex;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.counter{
+    width: 200px;
+    height: 58px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_counter{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 58px;
+    height: 58px;
+    background-color: white;
+    font-size: 28px;
+    color: #918f8f;
+}
+
+.counter span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.price_block{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.new_price{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    margin: 0;
+}
+
+.old_price{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-decoration: line-through;
+    color: #8b8b8b;
+    margin-bottom: -16px;
+}
+
+.order_details {
+    flex: 1;
+    background: #F1F1F1;
+    border-radius: 12px;
+    padding: 32px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.order_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.order_info h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+}
+
+.total_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total_block p{
+    font-weight: 500;
+    font-size: 40px;
+    color: #8b8b8b;
+    line-height: 130%;
+}
+
+.total_count_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.total_price{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    color: #282828;
+}
+
+.order_form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order_form input {
+    height: 58px;
+    padding: 16px 32px;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.order_btn{
+    margin-top: 16px;
+}
+
+.empty_cart{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.empty_cart p{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.btn_continue{
+    max-width: 313px;
+}
+
+@media (max-width: 1170px){
+    .cart_content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 770px){
+    .cart_section{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cart_header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart_item {
+        gap: 20px;
+    }
+
+    .cart_item img {
+        width: 150px;
+        height: 100%;
+    }
+
+    .item_info{
+        gap: 20px;
+        padding: 10px 10px 10px 0px;
+        height: 100%;
+    }
+
+    .item_top{
+        gap: 15px;
+    }
+
+    .item_top h3{
+        font-size: 17px;
+    }
+
+    .item_bottom{
+        gap: 15px;
+    }
+
+    .counter{
+        width: 150px;
+        height: 40px;
+    }
+
+    .btn_counter{
+        width: 50px;
+        height: 40px;
+    }
+
+    .new_price{
+        font-size: 30px;
+    }
+
+    .old_price{
+        font-size: 18px;
+        margin-bottom: -10px;
+    }
+}
+
+@media (max-width: 580px){
+    .cart_header h1 {
+        font-size: 40px;
+    }
+
+    .order_details {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .order_info {
+        gap: 20px;
+    }
+
+    .order_info h2 {
+        font-size: 30px;
+    }
+
+
+    .total_block p {
+        font-size: 25px;
+    }
+
+    .total_count_row {
+        gap: 20px;
+    }
+
+    .total_price {
+        font-size: 40px;
+    }
+
+    .order_form {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 510px) {
+    .cart_item {
+        gap: 20px;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .cart_item img{
+        border-right: none;
+    }
+
+    .item_info {
+        gap: 20px;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+    }
+
+    .item_top {
+        gap: 15px;
+    }
+
+    .item_bottom {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 375px){
+    .cart_header h1 {
+        font-size: 30px;
+    }
+}

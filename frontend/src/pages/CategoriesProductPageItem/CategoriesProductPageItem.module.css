@@ -1,0 +1,111 @@
+.item_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.image_wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 0.85;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.discount_badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #0d50ff;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.hover_btn_container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    padding: 16px;
+}
+
+.item_card:hover .hover_btn_container {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.add_btn {
+    width: 100%;
+    height: 58px;
+}
+
+.info {
+    padding: 0px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price_container {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.new_price {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.old_price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    text-decoration: line-through;
+    color: #8b8b8b;
+}
+
+@media (max-width: 770px){
+    .info {
+        padding: 0px 20px 20px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .new_price {
+        font-size: 30px;
+    }
+
+    .old_price {
+        font-size: 15px;
+    }
+}
