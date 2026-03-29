@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "proxy": "http://localhost:3333",
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "axios": "^1.13.4",
